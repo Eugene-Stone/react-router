@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { useGallery } from './pages/Gallery/useGallery';
+import { useEffect } from 'react';
 
 import Home from './pages/Home/Home';
 import Header from './pages/components/Header/Header';
@@ -30,7 +31,9 @@ const router = createBrowserRouter([
 
 function Layout() {
 	const gallery = useGallery();
-
+	useEffect(() => {
+		console.log('Layout mounted');
+	}, []);
 	return (
 		<>
 			<Header />

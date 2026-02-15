@@ -84,6 +84,10 @@
 			border-radius: 20px;
 			margin-bottom: 15px;
 
+			&.has-modal {
+				cursor: pointer;
+			}
+
 			&-link {
 				display: block;
 			}
