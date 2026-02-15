@@ -101,6 +101,9 @@ h1 {
     width: 100%;
     border-radius: 20px;
     margin-bottom: 15px;
+	 &-link {
+		display: block;
+	 }
   }
 
   &__bottom {

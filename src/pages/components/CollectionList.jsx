@@ -5,7 +5,12 @@ export default function CollectionList({ paginatedCollections }) {
 		<div className="content">
 			{paginatedCollections.map((collection, index) => {
 				return (
-					<CollectionCard key={index} name={collection.name} images={collection.photos} />
+					<CollectionCard
+						key={index}
+						index={index}
+						name={collection.name}
+						images={collection.photos}
+					/>
 				);
 			})}
 		</div>
