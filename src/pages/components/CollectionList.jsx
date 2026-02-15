@@ -7,7 +7,7 @@ export default function CollectionList({ paginatedCollections }) {
 				return (
 					<CollectionCard
 						key={index}
-						index={index}
+						collection={collection}
 						name={collection.name}
 						images={collection.photos}
 					/>

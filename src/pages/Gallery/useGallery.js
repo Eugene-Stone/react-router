@@ -61,6 +61,7 @@ export function useGallery() {
 		totalPages,
 		currentPage,
 		isLoading,
+		collections,
 	};
 
 }

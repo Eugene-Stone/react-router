@@ -1,7 +1,10 @@
-import { useGallery } from './useGallery';
-import Pagination from './components/Pagination';
-import Filter from './components/Filter';
-import CollectionList from './components/CollectionList';
+// import { useGallery } from '../useGallery';
+import { useOutletContext } from 'react-router-dom';
+import Filter from '../components/Filter';
+import Pagination from '../components/Pagination';
+import CollectionList from '../components/CollectionList';
+
+import './Gallery.scss';
 
 export default function Gallery() {
 	const {
@@ -15,10 +18,11 @@ export default function Gallery() {
 		totalPages,
 		currentPage,
 		isLoading,
-	} = useGallery();
+		// } = useGallery();
+	} = useOutletContext();
 
 	return (
-		<div className="App">
+		<div className="gallery">
 			<h1>Моя коллекция фотографий</h1>
 
 			{isLoading ? (

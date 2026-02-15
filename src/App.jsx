@@ -1,8 +1,10 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { useGallery } from './pages/Gallery/useGallery';
 
-import NotFoundPage from './pages/NotFoundPage';
+import Home from './pages/Home/Home';
 import Header from './pages/components/Header/Header';
-import Gallery from './pages/Gallery';
+import NotFoundPage from './pages/NotFoundPage';
+import Gallery from './pages/Gallery/Gallery';
 import CollectionCardPage from './pages/CollectionCardPage';
 import Test from './pages/Test';
 
@@ -18,7 +20,8 @@ const router = createBrowserRouter([
 		element: <Layout />,
 		children: [
 			{ path: '*', element: <NotFoundPage /> },
-			{ index: true, element: <Gallery /> },
+			{ index: true, element: <Home /> },
+			{ path: 'gallery', element: <Gallery /> },
 			{ path: 'test', element: <Test /> },
 			{ path: 'collection/:id', element: <CollectionCardPage /> },
 		],
@@ -26,10 +29,12 @@ const router = createBrowserRouter([
 ]);
 
 function Layout() {
+	const gallery = useGallery();
+
 	return (
 		<>
 			<Header />
-			<Outlet />
+			<Outlet context={gallery} />
 		</>
 	);
 }
