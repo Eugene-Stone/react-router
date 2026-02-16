@@ -1,6 +1,9 @@
+https://vite.dev/guide/static-deploy
+
 
 --open - Автоматическое открытие браузера
 "scripts": {
 	"start": "vite --open",
 	"dev": "vite --open",
 },
+

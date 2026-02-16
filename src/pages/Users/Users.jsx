@@ -23,7 +23,7 @@ function Users() {
 
 	useEffect(() => {
 		// Аналог как с сервера
-		fetch('/data/users.json')
+		fetch('/react-router/data/users.json')
 			.then((res) => res.json())
 			.then((json) => setUsers(json.data))
 			.then(() => setIsLoading(false))

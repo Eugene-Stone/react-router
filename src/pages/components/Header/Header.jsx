@@ -12,13 +12,13 @@ export default function Header() {
 
 			<ul>
 				<li>
-					<NavLink to={'/gallery'}>Gallery</NavLink>
+					<NavLink to={'/react-router/gallery'}>Gallery</NavLink>
 				</li>
 				<li>
-					<NavLink to={'/convertor'}>Convertor</NavLink>
+					<NavLink to={'/react-router/convertor'}>Convertor</NavLink>
 				</li>
 				<li>
-					<NavLink to={'/users'}>Users</NavLink>
+					<NavLink to={'/react-router/users'}>Users</NavLink>
 				</li>
 				<li>
 					<NavLink to={'/123'}>404 page</NavLink>

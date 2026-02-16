@@ -27,7 +27,7 @@ export function useGallery() {
 	// console.log(totalPages);
 
 	useEffect(() => {
-		fetch("/data/data-images.json")
+		fetch("/react-router/data/data-images.json")
 			.then((response) => response.json())
 			.then((json) => {
 				setCollections(json.collections);

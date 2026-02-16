@@ -24,7 +24,7 @@ function CurrencyConvertor() {
 
 	useEffect(() => {
 		// Аналог как с сервера
-		fetch('/data/exchange-rate.json')
+		fetch('/react-router/data/exchange-rate.json')
 			.then((res) => res.json())
 			.then((json) => {
 				// setExchangeRate(json);
