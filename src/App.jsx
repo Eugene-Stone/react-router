@@ -23,6 +23,7 @@ const router = createBrowserRouter([
 		children: [
 			{ path: '*', element: <NotFoundPage /> },
 			{ index: true, element: <Home /> },
+			{ path: '/react-router', element: <Home /> },
 			{ path: '/react-router/gallery', element: <Gallery /> },
 			{ path: '/react-router/convertor', element: <CurrencyConvertor /> },
 			{ path: '/react-router/users', element: <Users /> },

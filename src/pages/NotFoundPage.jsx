@@ -5,7 +5,7 @@ export default function NotFoundPage() {
 		<section className="page-404" style={{ textAlign: 'center' }}>
 			<h1>Page not found</h1>
 			<div className="button__box">
-				<Link to={'/'}>
+				<Link to={'/react-router'}>
 					<button>Go back home</button>
 				</Link>
 			</div>
