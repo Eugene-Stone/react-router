@@ -17,7 +17,9 @@ export default function CollectionCard({ name, images, collection, collectionCar
 						alt="Item"
 					/>
 				) : (
-					<Link className="collection__big-link" to={`/collection/${collection.id}`}>
+					<Link
+						className="collection__big-link"
+						to={`/gallery/collection/${collection.id}`}>
 						<img className="collection__big" src={images[0]} alt="Item" />
 					</Link>
 				)}

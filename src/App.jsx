@@ -7,7 +7,8 @@ import Header from './pages/components/Header/Header';
 import NotFoundPage from './pages/NotFoundPage';
 import Gallery from './pages/Gallery/Gallery';
 import CollectionCardPage from './pages/CollectionCardPage';
-import Test from './pages/Test';
+import CurrencyConvertor from './pages/CurrencyConvertor/CurrencyConvertor';
+import Users from './pages/Users/Users';
 
 // const router = createBrowserRouter([
 // 	{ path: '*', element: <NotFoundPage /> },
@@ -23,8 +24,9 @@ const router = createBrowserRouter([
 			{ path: '*', element: <NotFoundPage /> },
 			{ index: true, element: <Home /> },
 			{ path: 'gallery', element: <Gallery /> },
-			{ path: 'test', element: <Test /> },
-			{ path: 'collection/:id', element: <CollectionCardPage /> },
+			{ path: 'convertor', element: <CurrencyConvertor /> },
+			{ path: 'users', element: <Users /> },
+			{ path: 'gallery/collection/:id', element: <CollectionCardPage /> },
 		],
 	},
 ]);

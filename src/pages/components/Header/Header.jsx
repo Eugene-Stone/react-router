@@ -12,10 +12,13 @@ export default function Header() {
 
 			<ul>
 				<li>
-					<NavLink to={'/gallery'}>Gallery page</NavLink>
+					<NavLink to={'/gallery'}>Gallery</NavLink>
 				</li>
 				<li>
-					<NavLink to={'/test'}>Test page</NavLink>
+					<NavLink to={'/convertor'}>Convertor</NavLink>
+				</li>
+				<li>
+					<NavLink to={'/users'}>Users</NavLink>
 				</li>
 				<li>
 					<NavLink to={'/123'}>404 page</NavLink>
