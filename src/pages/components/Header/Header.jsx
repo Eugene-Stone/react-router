@@ -5,7 +5,7 @@ export default function Header() {
 	return (
 		<nav className="header">
 			<div className="logo">
-				<NavLink to={'/'}>
+				<NavLink to={'/react-router'}>
 					<span>Home</span>
 				</NavLink>
 			</div>
