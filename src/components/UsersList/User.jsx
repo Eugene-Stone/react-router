@@ -22,7 +22,7 @@ export const User = ({ email, first_name, last_name, avatar, handleInviteUser, i
 			<img
 				onClick={() => handleInviteUser(email)}
 				className="action"
-				src={`/react-router/images/${iconInvite}.svg`}
+				src={`/react-router/assets/images/${iconInvite}.svg`}
 				alt="Action"
 			/>
 		</li>
