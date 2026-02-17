@@ -1,7 +1,7 @@
 import { useParams, useOutletContext } from 'react-router-dom';
 // import { useGallery } from './Gallery/useGallery';
 
-import CollectionCard from './components/CollectionCard';
+import CollectionCard from '../components/CollectionCard';
 // import Modal from './components/Modal/Modal';
 
 export default function CollectionCardPage() {

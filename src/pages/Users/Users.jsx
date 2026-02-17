@@ -1,7 +1,7 @@
 import { Fragment, useState, useEffect } from 'react';
 
-import { Success } from '../components/Success';
-import { UsersList } from '../components/UsersList/UsersList';
+import { Success } from '../../components/Success';
+import { UsersList } from '../../components/UsersList/UsersList';
 
 import './Users.scss';
 

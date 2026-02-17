@@ -2,8 +2,8 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { useGallery } from './pages/Gallery/useGallery';
 import { useEffect } from 'react';
 
-import Home from './pages/Home/Home';
-import Header from './pages/components/Header/Header';
+import Home from './pages/Home';
+import Header from './components/Header/Header';
 import NotFoundPage from './pages/NotFoundPage';
 import Gallery from './pages/Gallery/Gallery';
 import CollectionCardPage from './pages/CollectionCardPage';

@@ -1,8 +1,8 @@
 // import { useGallery } from '../useGallery';
 import { useOutletContext } from 'react-router-dom';
-import Filter from '../components/Filter';
-import Pagination from '../components/Pagination';
-import CollectionList from '../components/CollectionList';
+import Filter from '../../components/Filter';
+import Pagination from '../../components/Pagination';
+import CollectionList from '../../components/CollectionList';
 
 import './Gallery.scss';
 

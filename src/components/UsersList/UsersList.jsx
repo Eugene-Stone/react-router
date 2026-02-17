@@ -1,4 +1,4 @@
-import { Skeleton } from './Skeleton';
+import { UserSkeleton } from './UserSkeleton';
 import { User } from './User';
 
 export const UsersList = ({
@@ -26,9 +26,9 @@ export const UsersList = ({
 			</div>
 			{isLoading ? (
 				<div className="skeleton-list">
-					<Skeleton />
-					<Skeleton />
-					<Skeleton />
+					<UserSkeleton />
+					<UserSkeleton />
+					<UserSkeleton />
 				</div>
 			) : (
 				<ul className="users-list">

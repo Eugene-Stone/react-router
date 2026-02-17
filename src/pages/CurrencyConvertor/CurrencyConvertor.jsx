@@ -1,6 +1,6 @@
 import { Fragment, useState, useEffect, useEffectEvent, useRef } from 'react';
 
-import { CurrencyBlock } from '../components/CurrencyBlock';
+import { CurrencyBlock } from '../../components/CurrencyBlock';
 
 import './CurrencyConvertor.scss';
 
