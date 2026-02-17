@@ -28,8 +28,8 @@ function CurrencyConvertor() {
 			.then((res) => res.json())
 			.then((json) => {
 				// setExchangeRate(json);
-				handleFromCurrencyInitEvent();
 				exchangeRateRef.current = json;
+				handleFromCurrencyInitEvent();
 				showConsoleLog(json);
 			})
 			.catch((err) => console.error('Ошибка загрузки:', err));
