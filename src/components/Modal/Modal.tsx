@@ -3,29 +3,33 @@ import './Modal.scss';
 // import { useState } from 'react';
 // import { useModal } from './useModal';
 
-function Modal({ photos, modal }) {
+// Интерфейс для пропсов Modal
+interface ModalProps {
+	photos: string[];
+	modal: {
+		currentImage: number;
+		setCurrentImage: (index: number) => void;
+		showClass: string;
+		handleToggleModal: () => void;
+	};
+}
+
+function Modal({ photos, modal }: ModalProps): React.ReactElement {
 	const { currentImage, setCurrentImage, showClass, handleToggleModal } = modal;
 
 	const disabledPrev = currentImage === 0 ? 'disabled' : '';
-	const disabledNext = currentImage === photos.length - 1 ? 'disabled' : '2';
+	const disabledNext = currentImage === photos.length - 1 ? 'disabled' : '';
 
-	function handleNextImage() {
+	function handleNextImage(): void {
 		if (currentImage < photos.length - 1) {
 			setCurrentImage(currentImage + 1);
 		}
-		// Если нужно зациклить
-		// else if (currentImage === photos.length - 1) {
-		// 	setCurrentImage(0);
-		// }
 	}
-	function handlePrevImage() {
+
+	function handlePrevImage(): void {
 		if (currentImage >= 1) {
 			setCurrentImage(currentImage - 1);
 		}
-		// Если нужно зациклить
-		// else if (currentImage === 0) {
-		// 	setCurrentImage(photos.length - 1);
-		// }
 	}
 
 	useEffect(() => {
@@ -33,7 +37,7 @@ function Modal({ photos, modal }) {
 			return;
 		}
 
-		function handleKeyDown(e) {
+		function handleKeyDown(e: KeyboardEvent): void {
 			if (e.key === 'ArrowRight') {
 				handleNextImage();
 			}

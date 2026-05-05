@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function NotFoundPage() {
+export default function NotFoundPage(): React.ReactElement {
 	return (
 		<section className="page-404" style={{ textAlign: 'center' }}>
 			<h1>Page not found</h1>

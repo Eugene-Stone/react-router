@@ -1,62 +1,54 @@
-import { Fragment, useState, useEffect, useEffectEvent, useRef } from 'react';
+import { Fragment, useState, useEffect, useRef } from 'react';
 
 import { CurrencyBlock } from '../../components/CurrencyBlock';
 
 import './CurrencyConvertor.scss';
 
-function CurrencyConvertor() {
-	const [fromCurrency, setFromCurrency] = useState('USD');
-	const [toCurrency, setToCurrency] = useState('UAH');
-	const [fromCurrencyValue, setFromCurrencyValue] = useState(1);
-	const [toCurrencyValue, setToCurrencyValue] = useState(0);
+// Интерфейс для курса валюты из JSON
+interface ExchangeRateItem {
+	CurrencyCodeL: string;
+	Amount: number;
+}
 
-	// const [exchangeRate, setExchangeRate] = useState([]);
+function CurrencyConvertor(): React.ReactElement {
+	const [fromCurrency, setFromCurrency] = useState<string>('USD');
+	const [toCurrency, setToCurrency] = useState<string>('UAH');
+	const [fromCurrencyValue, setFromCurrencyValue] = useState<number>(1);
+	const [toCurrencyValue, setToCurrencyValue] = useState<number>(0);
 
-	const exchangeRateRef = useRef([]);
-
-	const showConsoleLog = useEffectEvent((json) => {
-		console.log(json);
-	});
-
-	var handleFromCurrencyInitEvent = useEffectEvent(() => {
-		handleFromCurrencyValue(1);
-	});
+	const exchangeRateRef = useRef<ExchangeRateItem[]>([]);
 
 	useEffect(() => {
-		// Аналог как с сервера
+		// Загружаем данные о курсах валют
 		fetch('/react-router/data/exchange-rate.json')
 			.then((res) => res.json())
-			.then((json) => {
-				// setExchangeRate(json);
+			.then((json: ExchangeRateItem[]) => {
 				exchangeRateRef.current = json;
-				handleFromCurrencyInitEvent();
-				showConsoleLog(json);
+				handleFromCurrencyValue(1); // Инициализируем значение
 			})
 			.catch((err) => console.error('Ошибка загрузки:', err));
 	}, []);
 
-	const getRate = (currency) => {
+	// Функция для получения курса валюты
+	const getRate = (currency: string): number => {
 		if (currency === 'UAH') return 1;
 
-		// const rates = exchangeRate.find((item) => item.CurrencyCodeL === currency);
 		const rates = exchangeRateRef.current.find((item) => item.CurrencyCodeL === currency);
-
 		return rates ? rates.Amount : 1;
 	};
 
-	function handleFromCurrencyChoice(currency, value) {
+	// Обработчик выбора валюты "от"
+	function handleFromCurrencyChoice(currency: string, value: number): void {
 		setFromCurrency(currency);
-
-		// handleFromCurrencyValue(value);
 	}
 
-	function handleToCurrencyChoice(currency, value) {
+	// Обработчик выбора валюты "к"
+	function handleToCurrencyChoice(currency: string, value: number): void {
 		setToCurrency(currency);
-
-		// handleToCurrencyValue(value);
 	}
 
-	function handleFromCurrencyValue(value) {
+	// Обработчик изменения значения "от"
+	function handleFromCurrencyValue(value: number): void {
 		if (!exchangeRateRef.current.length) return;
 
 		const fromRate = getRate(fromCurrency);
@@ -67,7 +59,8 @@ function CurrencyConvertor() {
 		setToCurrencyValue(result);
 	}
 
-	function handleToCurrencyValue(value) {
+	// Обработчик изменения значения "к"
+	function handleToCurrencyValue(value: number): void {
 		if (!exchangeRateRef.current.length) return;
 
 		const fromRate = getRate(fromCurrency);
@@ -78,23 +71,14 @@ function CurrencyConvertor() {
 		setFromCurrencyValue(result);
 	}
 
-	const handleFromCurrencyValueEvent = useEffectEvent(() => {
-		handleFromCurrencyValue(fromCurrencyValue);
-	});
-
-	const handleToCurrencyValueEvent = useEffectEvent(() => {
-		handleToCurrencyValue(toCurrencyValue);
-	});
-
 	useEffect(() => {
-		handleFromCurrencyValueEvent();
+		handleFromCurrencyValue(fromCurrencyValue);
 	}, [fromCurrency]);
 
 	useEffect(() => {
-		handleToCurrencyValueEvent();
+		handleToCurrencyValue(toCurrencyValue);
 	}, [toCurrency]);
 
-	// console.log(exchangeRate.includes('CurrencyCodeL'));
 	return (
 		<Fragment>
 			<div className="convertor">

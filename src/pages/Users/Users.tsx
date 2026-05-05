@@ -5,21 +5,21 @@ import { UsersList } from '../../components/UsersList/UsersList';
 
 import './Users.scss';
 
-// Тут список пользователей: https://reqres.in/api/users
-// useEffect(() => {
-// 	// Аналог как с сервера
-// 	fetch('/data/users.json')
-// 		.then((res) => res.json())
-// 		.then((data) => setImages(data))
-// 		.catch((err) => console.error('Ошибка загрузки:', err)); // Всегда добавляй catch!
-// }, []);
+// Интерфейс для пользователя
+interface UserItem {
+	id: number;
+	email: string;
+	first_name: string;
+	last_name: string;
+	avatar: string;
+}
 
-function Users() {
-	const [users, setUsers] = useState([]);
-	const [isLoading, setIsLoading] = useState(true);
-	const [searchValue, setSearchValue] = useState('');
-	const [invitesUsers, setInvitesUsers] = useState([]);
-	const [inviteSend, setInviteSend] = useState(false);
+function Users(): React.ReactElement {
+	const [users, setUsers] = useState<UserItem[]>([]);
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+	const [searchValue, setSearchValue] = useState<string>('');
+	const [invitesUsers, setInvitesUsers] = useState<string[]>([]);
+	const [inviteSend, setInviteSend] = useState<boolean>(false);
 
 	useEffect(() => {
 		// Аналог как с сервера
@@ -30,12 +30,11 @@ function Users() {
 			.catch((err) => console.error('Ошибка загрузки:', err)); // Всегда добавляй catch!
 	}, []);
 
-	function handleSearchInput(e) {
+	function handleSearchInput(e: React.ChangeEvent<HTMLInputElement>): void {
 		setSearchValue(e.target.value);
-		// console.log(e.target.value);
 	}
 
-	function handleInviteUser(email) {
+	function handleInviteUser(email: string): void {
 		if (invitesUsers.includes(email)) {
 			setInvitesUsers(invitesUsers.filter((prev) => prev !== email));
 		} else {
@@ -43,11 +42,9 @@ function Users() {
 		}
 	}
 
-	function handleSendInvite() {
+	function handleSendInvite(): void {
 		setInviteSend(true);
 	}
-
-	// console.log(invitesUsers);
 
 	return (
 		<Fragment>

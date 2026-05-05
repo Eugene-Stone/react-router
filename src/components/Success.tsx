@@ -1,4 +1,9 @@
-export const Success = ({ invitesUsers }) => {
+// Интерфейс для пропсов Success
+interface SuccessProps {
+	invitesUsers: string[];
+}
+
+export const Success = ({ invitesUsers }: SuccessProps): React.ReactElement => {
 	const count = invitesUsers.length;
 	return (
 		<div className="success-block">

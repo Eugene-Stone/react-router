@@ -2,7 +2,20 @@ import { Link } from 'react-router-dom';
 import { useModal } from './Modal/useModal';
 import Modal from './Modal/Modal';
 
-export default function CollectionCard({ name, images, collection, collectionCardPage }) {
+// Интерфейс для пропсов CollectionCard
+interface CollectionCardProps {
+	name?: string;
+	images: string[];
+	collection: { id: number };
+	collectionCardPage: boolean;
+}
+
+export default function CollectionCard({
+	name,
+	images,
+	collection,
+	collectionCardPage,
+}: CollectionCardProps): React.ReactElement {
 	const modal = useModal();
 	const handleToggleModal = modal.handleToggleModal;
 
@@ -12,7 +25,9 @@ export default function CollectionCard({ name, images, collection, collectionCar
 				{collectionCardPage ? (
 					<img
 						className="collection__big has-modal"
-						onClick={(e) => handleToggleModal(e.target.src)}
+						onClick={(e: React.MouseEvent<HTMLImageElement>) =>
+							handleToggleModal(e.currentTarget.src)
+						}
 						src={images[0]}
 						alt="Item"
 					/>

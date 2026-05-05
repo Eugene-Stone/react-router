@@ -2,13 +2,13 @@ import { useState } from 'react';
 
 import './Counter.scss';
 
-function Counter() {
-	const [count, setCount] = useState(0);
+function Counter(): React.ReactElement {
+	const [count, setCount] = useState<number>(0);
 
-	function handleCountIncrement() {
+	function handleCountIncrement(): void {
 		setCount(count + 1);
 	}
-	function handleCountDecrement() {
+	function handleCountDecrement(): void {
 		if (count > 0) {
 			setCount(count - 1);
 		}

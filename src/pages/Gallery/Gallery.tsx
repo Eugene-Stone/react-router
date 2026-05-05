@@ -6,7 +6,26 @@ import CollectionList from '../../components/CollectionList';
 
 import './Gallery.scss';
 
-export default function Gallery() {
+// Интерфейс для контекста галереи (из useGallery)
+interface GalleryContext {
+	tags: { name: string }[];
+	tagCurrent: number;
+	handleCurrentTag: (index: number) => void;
+	searchValue: string;
+	setSearchValue: (value: string) => void;
+	setCurrentPage: (page: number) => void;
+	paginatedCollections: {
+		id: number;
+		category: number;
+		name: string;
+		photos: string[];
+	}[];
+	totalPages: number;
+	currentPage: number;
+	isLoading: boolean;
+}
+
+export default function Gallery(): React.ReactElement {
 	const {
 		tags,
 		tagCurrent,
@@ -19,7 +38,7 @@ export default function Gallery() {
 		currentPage,
 		isLoading,
 		// } = useGallery();
-	} = useOutletContext();
+	} = useOutletContext<GalleryContext>();
 
 	return (
 		<div className="gallery">

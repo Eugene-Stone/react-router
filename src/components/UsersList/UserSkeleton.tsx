@@ -1,6 +1,6 @@
 import ContentLoader from 'react-content-loader';
 
-export const UserSkeleton = () => (
+export const UserSkeleton = (): React.ReactElement => (
 	<ContentLoader
 		speed={2}
 		width={320}

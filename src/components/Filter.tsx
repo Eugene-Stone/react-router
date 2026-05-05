@@ -1,3 +1,13 @@
+// Интерфейс для пропсов Filter
+interface FilterProps {
+	tags: { name: string }[];
+	tagCurrent: number;
+	handleCurrentTag: (index: number) => void;
+	searchValue: string;
+	setSearchValue: (value: string) => void;
+	setCurrentPage: (page: number) => void;
+}
+
 export default function Filter({
 	tags,
 	tagCurrent,
@@ -5,7 +15,7 @@ export default function Filter({
 	searchValue,
 	setSearchValue,
 	setCurrentPage,
-}) {
+}: FilterProps): React.ReactElement {
 	return (
 		<div className="top">
 			<ul className="tags">

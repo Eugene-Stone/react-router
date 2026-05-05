@@ -1,0 +1,407 @@
+[
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "036",
+		"CurrencyCodeL": "AUD",
+		"Units": 1,
+		"Amount": 30.5978,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "944",
+		"CurrencyCodeL": "AZN",
+		"Units": 1,
+		"Amount": 25.3128,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "012",
+		"CurrencyCodeL": "DZD",
+		"Units": 10,
+		"Amount": 3.3336,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "764",
+		"CurrencyCodeL": "THB",
+		"Units": 10,
+		"Amount": 13.8491,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "410",
+		"CurrencyCodeL": "KRW",
+		"Units": 100,
+		"Amount": 2.9621,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "344",
+		"CurrencyCodeL": "HKD",
+		"Units": 1,
+		"Amount": 5.5049,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "208",
+		"CurrencyCodeL": "DKK",
+		"Units": 1,
+		"Amount": 6.8554,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "784",
+		"CurrencyCodeL": "AED",
+		"Units": 1,
+		"Amount": 11.7154,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "840",
+		"CurrencyCodeL": "USD",
+		"Units": 1,
+		"Amount": 43.0318,
+		"special": "N"
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "704",
+		"CurrencyCodeL": "VND",
+		"Units": 1000,
+		"Amount": 1.6555,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "978",
+		"CurrencyCodeL": "EUR",
+		"Units": 1,
+		"Amount": 51.2078,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "818",
+		"CurrencyCodeL": "EGP",
+		"Units": 1,
+		"Amount": 0.9184,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "392",
+		"CurrencyCodeL": "JPY",
+		"Units": 10,
+		"Amount": 2.8015,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "985",
+		"CurrencyCodeL": "PLN",
+		"Units": 1,
+		"Amount": 12.1511,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "356",
+		"CurrencyCodeL": "INR",
+		"Units": 10,
+		"Amount": 4.744,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "124",
+		"CurrencyCodeL": "CAD",
+		"Units": 1,
+		"Amount": 31.7437,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "981",
+		"CurrencyCodeL": "GEL",
+		"Units": 1,
+		"Amount": 16.016,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "422",
+		"CurrencyCodeL": "LBP",
+		"Units": 100,
+		"Amount": 0.048,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "458",
+		"CurrencyCodeL": "MYR",
+		"Units": 1,
+		"Amount": 10.9893,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "484",
+		"CurrencyCodeL": "MXN",
+		"Units": 1,
+		"Amount": 2.501,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "498",
+		"CurrencyCodeL": "MDL",
+		"Units": 1,
+		"Amount": 2.5436,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "376",
+		"CurrencyCodeL": "ILS",
+		"Units": 1,
+		"Amount": 13.9736,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "554",
+		"CurrencyCodeL": "NZD",
+		"Units": 1,
+		"Amount": 26.073,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "578",
+		"CurrencyCodeL": "NOK",
+		"Units": 1,
+		"Amount": 4.5455,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "710",
+		"CurrencyCodeL": "ZAR",
+		"Units": 1,
+		"Amount": 2.7082,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "946",
+		"CurrencyCodeL": "RON",
+		"Units": 1,
+		"Amount": 10.0598,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "360",
+		"CurrencyCodeL": "IDR",
+		"Units": 1000,
+		"Amount": 2.5632,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "682",
+		"CurrencyCodeL": "SAR",
+		"Units": 1,
+		"Amount": 11.4739,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "941",
+		"CurrencyCodeL": "RSD",
+		"Units": 10,
+		"Amount": 4.365,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "702",
+		"CurrencyCodeL": "SGD",
+		"Units": 1,
+		"Amount": 34.0765,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "960",
+		"CurrencyCodeL": "XDR",
+		"Units": 1,
+		"Amount": 59.3927,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "050",
+		"CurrencyCodeL": "BDT",
+		"Units": 10,
+		"Amount": 3.5215,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "398",
+		"CurrencyCodeL": "KZT",
+		"Units": 100,
+		"Amount": 8.7243,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "788",
+		"CurrencyCodeL": "TND",
+		"Units": 1,
+		"Amount": 15.1633,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "949",
+		"CurrencyCodeL": "TRY",
+		"Units": 1,
+		"Amount": 0.986,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "348",
+		"CurrencyCodeL": "HUF",
+		"Units": 100,
+		"Amount": 13.5078,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "826",
+		"CurrencyCodeL": "GBP",
+		"Units": 1,
+		"Amount": 58.8675,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "203",
+		"CurrencyCodeL": "CZK",
+		"Units": 1,
+		"Amount": 2.1118,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "752",
+		"CurrencyCodeL": "SEK",
+		"Units": 1,
+		"Amount": 4.8482,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "756",
+		"CurrencyCodeL": "CHF",
+		"Units": 1,
+		"Amount": 56.0456,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "156",
+		"CurrencyCodeL": "CNY",
+		"Units": 1,
+		"Amount": 6.2262,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "959",
+		"CurrencyCodeL": "XAU",
+		"Units": 1,
+		"Amount": 218561.95,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "961",
+		"CurrencyCodeL": "XAG",
+		"Units": 1,
+		"Amount": 3679.6,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "962",
+		"CurrencyCodeL": "XPT",
+		"Units": 1,
+		"Amount": 93763.28,
+		"special": null
+	},
+	{
+		"StartDate": "12.02.2026",
+		"TimeSign": "0000",
+		"CurrencyCode": "964",
+		"CurrencyCodeL": "XPD",
+		"Units": 1,
+		"Amount": 75698.53,
+		"special": null
+	}
+]

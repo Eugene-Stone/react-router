@@ -1,6 +1,26 @@
 import { UserSkeleton } from './UserSkeleton';
 import { User } from './User';
 
+// Интерфейс для пользователя из API
+interface UserItem {
+	id: number;
+	email: string;
+	first_name: string;
+	last_name: string;
+	avatar: string;
+}
+
+// Интерфейс для пропсов UsersList
+interface UsersListProps {
+	items: UserItem[];
+	isLoading: boolean;
+	searchValue: string;
+	invitesUsers: string[];
+	handleSearchInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
+	handleInviteUser: (email: string) => void;
+	handleSendInvite: () => void;
+}
+
 export const UsersList = ({
 	items,
 	isLoading,
@@ -9,8 +29,7 @@ export const UsersList = ({
 	handleSearchInput,
 	handleInviteUser,
 	handleSendInvite,
-}) => {
-	// console.log(items.data);
+}: UsersListProps) => {
 	return (
 		<>
 			<div className="search">
