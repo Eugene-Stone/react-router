@@ -1,16 +1,48 @@
-# React + Vite
+# react-router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SPA на React + Vite + TypeScript с поддержкой React Router, локальных данных и нескольких демонстрационных страниц.
 
-Currently, two official plugins are available:
+## Что реализовано
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Маршрутизация с `react-router-dom`
+- Главная страница с простым счётчиком
+- Страница галереи с фильтрами, страницами и переходом на карточку коллекции
+- Страница конвертора валют, загружающая курсы из локального JSON
+- Страница пользователей с поиском, загрузкой данных и приглашениями
+- Страница 404 для неизвестных маршрутов
+- Отдельный `base: "/react-router"` для корректной работы на GitHub Pages
 
-## React Compiler
+## Стек
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript 6
+- Vite
+- React Router DOM 7
+- Sass
+- `react-content-loader` для скелетонов загрузки
+- ESLint
 
-## Expanding the ESLint configuration
+## Маршруты
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `/react-router` — главная страница
+- `/react-router/gallery` — галерея с фильтрами и пагинацией
+- `/react-router/gallery/collection/:id` — страница отдельной коллекции
+- `/react-router/convertor` — конвертор валют
+- `/react-router/users` — список пользователей
+- любой другой путь — страница 404
+
+## Структура проекта
+
+- `src/` — исходный код приложение
+  - `pages/` — маршруты и страницы
+  - `components/` — переиспользуемые UI-элементы
+  - `styles/` — глобальные стили
+- `public/data/` — локальные JSON-данные для страниц
+- `vite.config.ts` — конфигурация Vite с `base: "/react-router"`
+
+## Особенности
+
+- Данные галереи и пользователей загружаются из локальных JSON-файлов
+- Хук `useGallery` управляет фильтрацией и пагинацией
+- `RouterProvider` и `Outlet` используются для вложенной маршрутизации
+- 404-страница обрабатывает любые неизвестные URL
